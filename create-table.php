@@ -10,7 +10,7 @@ try {
 			gender CHAR(6) NOT NULL,
 			birthdate DATE NOT NULL,
 			owner VARCHAR(70) NOT NULL,
-			email VARCHAR(100) NOT NULL,
+			email VARCHAR(100) UNIQUE NOT NULL,
 			address VARCHAR(255) NOT NULL,
 			contact_number VARCHAR(20) NOT NULL,
 			created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
